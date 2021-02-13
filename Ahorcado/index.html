@@ -4,8 +4,9 @@
 
         <title>Ahorcado UCompensar</title>
         <script type="text/javascript">
-        function eventoBotonLetra (){
-            console.log("Funciono")
+        var palabraOculta="LEON"
+        function eventoBotonLetra (boton){
+            console.log(boton)
 
         }
         function ocultarEmojis(){
@@ -45,7 +46,7 @@
         </div>
         <div style="background-color:rgb(0, 147, 206);border: 1px solid steelblue;height: 100px; width: 100%;display: flex; justify-content: center; align-items: center;">
             <div style="height: 10px; ">
-                <input type="button" onclick="eventoBotonLetra()" value="A" style="text-decoration: none;padding: 10px;font-weight: 600;font-size: 20px;color: #ffffff;background-color: #1883ba;border-radius: 6px;border: 2px solid #0016b0;">
+                <input type="button" onclick="eventoBotonLetra(this)" value="A" style="text-decoration: none;padding: 10px;font-weight: 600;font-size: 20px;color: #ffffff;background-color: #1883ba;border-radius: 6px;border: 2px solid #0016b0;">
                 <input type="button"  value="B" style="text-decoration: none;padding: 10px;font-weight: 600;font-size: 20px;color: #ffffff;background-color: #1883ba;border-radius: 6px;border: 2px solid #0016b0;">
                 <input type="button"  value="C" style="text-decoration: none;padding: 10px;font-weight: 600;font-size: 20px;color: #ffffff;background-color: #1883ba;border-radius: 6px;border: 2px solid #0016b0;">
                 <input type="button"  value="D" style="text-decoration: none;padding: 10px;font-weight: 600;font-size: 20px;color: #ffffff;background-color: #1883ba;border-radius: 6px;border: 2px solid #0016b0;">
