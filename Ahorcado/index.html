@@ -5,6 +5,8 @@
         <title>Ahorcado UCompensar</title>
         <script type="text/javascript">
         var palabraOculta="LEON"
+        var emojiActual=1
+        var cantidadExitosa=0
         function eventoBotonLetra (boton){
             console.log(boton.value)
             var letra=boton.value
@@ -12,6 +14,23 @@
             boton.style.backgroundColor="gray"
             var posicionLetra=palabraOculta.indexOf(letra)
             console.log(posicionLetra)
+            if(emojiActual>5){
+                alert("Game Over")
+                return
+            }
+            if(posicionLetra==-1){
+                document.getElementById("emoji"+emojiActual).style.display="block"; 
+                emojiActual=emojiActual+1
+            }
+            else{
+                document.getElementById("palabra"+(posicionLetra+1)).innerText=letra
+                cantidadExitosa=cantidadExitosa+1
+
+            }
+            if(cantidadExitosa==4){
+                alert("Victoria")
+                return
+            }
 
 
 
@@ -33,13 +52,16 @@
         </div>
         <div id="palabra" style="background-color:lightblue;border: 1px solid steelblue;height: 150px;display: flex; justify-content: center; align-items: center;">
             <div id="internoPalabra" style="background-color:rgb(240, 240, 240);height: 30px;border: 1px solid;width: 50px;float: left;text-align: center ;">
-                <a>_</a>
+                <a id="palabra1">_</a>
             </div>
             <div id="internoPalabra" style="background-color:rgb(240, 240, 240);height: 30px;border: 1px solid;width: 50px;float: left;text-align: center ;">
-                <a>_</a>
+                <a id="palabra2">_</a>
             </div>
             <div id="internoPalabra" style="background-color:rgb(240, 240, 240);height: 30px;border: 1px solid;width: 50px;float: left;text-align: center ;">
-                <a>_</a>
+                <a id="palabra3">_</a>
+            </div>
+            <div id="internoPalabra" style="background-color:rgb(240, 240, 240);height: 30px;border: 1px solid;width: 50px;float: left;text-align: center ;">
+                <a id="palabra4">_</a>
             </div>
         </div>
         <div style="border: 1px solid steelblue;height: 100px; width: 100%;display: flex; justify-content: center; align-items: center;">
