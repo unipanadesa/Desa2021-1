@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-<<<<<<< HEAD
+
         <title>Ahorcado UCompensar</title>
+        <script type="text/javascript">
+        function eventoBotonLetra (){
+            console.log("Funciono")
+
+        }
+        function ocultarEmojis(){
+            document.getElementById("emoji1").style.display="none";
+            document.getElementById("emoji2").style.display="none";
+            document.getElementById("emoji3").style.display="none";
+            document.getElementById("emoji4").style.display="none";
+            document.getElementById("emoji5").style.display="none";
+        }
+        </script>
     </head>
-    <body>
+    <body onload="ocultarEmojis()">
         <div id="contenedor" style="background-color:rgb(0, 147, 206);border: 1px solid steelblue; height: 100px;display: flex; justify-content: center; align-items: center;">
             <div id="div1" style="height: auto;color: white; ">
             <h1>Ahorcado</h1>
@@ -23,16 +36,16 @@
         </div>
         <div style="border: 1px solid steelblue;height: 100px; width: 100%;display: flex; justify-content: center; align-items: center;">
             <div">
-                <p style="font-size: 30px;float: left;padding-left: 10px;">&#128513;</p>
-                <p style="font-size: 30px;float: left;padding-left: 10px;">&#128515;</p>
-                <p style="font-size: 30px;float: left;padding-left: 10px;">&#128528;</p>
-                <p style="font-size: 30px;float: left;padding-left: 10px;">&#128544;</p>
-                <p style="font-size: 30px;float: left;padding-left: 10px;">&#128545;</p>
+                <p id="emoji1" style="font-size: 30px;float: left;padding-left: 10px;">&#128513;</p>
+                <p id="emoji2" style="font-size: 30px;float: left;padding-left: 10px;">&#128515;</p>
+                <p id="emoji3" style="font-size: 30px;float: left;padding-left: 10px;">&#128528;</p>
+                <p id="emoji4" style="font-size: 30px;float: left;padding-left: 10px;">&#128544;</p>
+                <p id="emoji5" style="font-size: 30px;float: left;padding-left: 10px;">&#128545;</p>
             </div>
         </div>
         <div style="background-color:rgb(0, 147, 206);border: 1px solid steelblue;height: 100px; width: 100%;display: flex; justify-content: center; align-items: center;">
             <div style="height: 10px; ">
-                <input type="button"  value="A" style="text-decoration: none;padding: 10px;font-weight: 600;font-size: 20px;color: #ffffff;background-color: #1883ba;border-radius: 6px;border: 2px solid #0016b0;">
+                <input type="button" onclick="eventoBotonLetra()" value="A" style="text-decoration: none;padding: 10px;font-weight: 600;font-size: 20px;color: #ffffff;background-color: #1883ba;border-radius: 6px;border: 2px solid #0016b0;">
                 <input type="button"  value="B" style="text-decoration: none;padding: 10px;font-weight: 600;font-size: 20px;color: #ffffff;background-color: #1883ba;border-radius: 6px;border: 2px solid #0016b0;">
                 <input type="button"  value="C" style="text-decoration: none;padding: 10px;font-weight: 600;font-size: 20px;color: #ffffff;background-color: #1883ba;border-radius: 6px;border: 2px solid #0016b0;">
                 <input type="button"  value="D" style="text-decoration: none;padding: 10px;font-weight: 600;font-size: 20px;color: #ffffff;background-color: #1883ba;border-radius: 6px;border: 2px solid #0016b0;">
@@ -63,45 +76,6 @@
 
             </div>
         </div>
-=======
-        <title>Ahorcado Ucompensar</title>
-    </head>
-    <body>
-        <div style="border:2px solid; height: 100px; margin:40px">
-            <div style="height: 30px; width: 300px; color: black; background-color: blue;">
-                <h1>Ahorcado</h1>
-            </div>
-        </div>
-        <div style="border:2px solid; height: 100px; margin:40px">
-            <div style="background-color: chartreuse; height: 100px; width: 80%;">
-                <a>_</a>
-                <a>_</a>
-                <a>_</a>
-            </div>
-        </div>
-            <div style="border:2px solid; height: 100px; margin:40px;">
-                <div style="height: 80px; width: 70%;">
-                    <p style="font-size: 30px; float: left; padding-left: 10px;">&#128513;</p>
-                    <p style="font-size: 30px; float: left; padding-left: 10px;">&#128515;</p>
-                    <p style="font-size: 30px; float: left; padding-left: 10px;">&#128528;</p>
-                    <p style="font-size: 30px; float: left; padding-left: 10px;">&#128544;</p>
-                    <p style="font-size: 30px; float: left; padding-left: 10px;">&#128545;</p>
-            </div>
-        </div>
-            <div style= "border: 2px solid; height: 250px; margin: 40px;">
-                <div style="height: 230px; width: 90%;">
-                    <input type = "buttom" value= "A" style= "width: 10px;"></input>
-                    <input type = "buttom" value= "B" style= "width: 10px;"></input>
-                    <input type = "buttom" value= "C" style= "width: 10px;"></input>
-                    <input type = "buttom" value= "D" style= "width: 10px;"></input>
-                    <input type = "buttom" value= "E" style= "width: 10px;"></input>
-                    <input type = "buttom" value= "F" style= "width: 10px;"></input>
-                    <input type = "buttom" value= "G" style= "width: 10px;"></input>
-                    <input type = "buttom" value= "H" style= "width: 10px;"></input>
-                    <input type = "buttom" value= "I" style= "width: 10px;"></input>
-                    <input type = "buttom" value= "J" style= "width: 10px;"></input>
-                </div>
-       </div>
->>>>>>> 168d4e4425dfe9a9c474e6b6aa74104d42c7c81d
+
     </body>
 </html>
